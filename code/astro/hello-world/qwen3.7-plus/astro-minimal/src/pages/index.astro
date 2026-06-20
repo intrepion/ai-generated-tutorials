@@ -1,0 +1,15 @@
+---
+// This is the "frontmatter". It runs at build time, never in the browser.
+const title = "Hello World";
+---
+
+<!-- This is the template. It compiles to static HTML. -->
+<html>
+  <head>
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>{title}</h1>
+  </body>
+</html>
+
