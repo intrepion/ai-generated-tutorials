@@ -1,0 +1,1 @@
+write me a tutorial blog post on a To Do List project using Flutter and SpacetimeDB. It should have the basics of showing the whole list, creating a new To Do item, reading an existing To Do item, updating an existing To Do item, some sort of complete status toggle, and deleting an existing To Do item.
