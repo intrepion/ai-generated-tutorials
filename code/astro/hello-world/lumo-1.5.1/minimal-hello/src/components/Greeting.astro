@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+}
+const { name } = Astro.props;
+---
+
+<p class="island">You invited: {name}</p>
+
+<style>
+  .island {
+    color: #646cff;
+    font-weight: bold;
+  }
+</style>
