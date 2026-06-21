@@ -1,0 +1,12 @@
+{
+  "name": "minimal-astro-hello-world",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev"
+  },
+  "dependencies": {
+    "astro": "^4.0.0"
+  }
+}
+
