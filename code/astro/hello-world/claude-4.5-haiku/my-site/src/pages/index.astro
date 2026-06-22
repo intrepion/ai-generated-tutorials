@@ -8,4 +8,17 @@ const date = new Date().toLocaleDateString();
 <BaseLayout title="Home">
   <h1>{greeting}</h1>
   <p>Today is {date}</p>
+  
+  <button id="counter">Count: 0</button>
+
+  <script>
+    // This script *will* ship to the browser
+    let count = 0;
+    document.getElementById('counter').addEventListener('click', () => {
+      count++;
+      document.getElementById('counter').innerText = `Count: ${count}`;
+    });
+  </script>
+
+  <p><a href="/about">Visit the about page</a></p>
 </BaseLayout>
