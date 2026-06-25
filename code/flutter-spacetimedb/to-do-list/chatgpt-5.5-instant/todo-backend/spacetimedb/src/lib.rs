@@ -13,3 +13,20 @@ pub struct Todo {
 
     pub owner: Identity,
 }
+
+#[reducer]
+pub fn create_todo(
+    ctx: &ReducerContext,
+    title: String,
+    description: String,
+) {
+    let id = ctx.db.todo().count() as u64 + 1;
+
+    ctx.db.todo().insert(Todo {
+        id,
+        title,
+        description,
+        completed: false,
+        owner: ctx.sender,
+    });
+}
